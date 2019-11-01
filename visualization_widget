@@ -14,11 +14,11 @@ import ipywidgets as widgets
 from IPython.display import display, clear_output
 
 #Data Frame
-files = os.listdir("../python/data/excel-projekt")
+files = os.listdir(".")
 
 df={}
 for file in files:
-    df[file]=pd.read_excel("../python/data/excel-projekt/"+file)#) sheetname=None)
+    df[file]=pd.read_excel("./"+file)#) sheetname=None)
     
 df
 
